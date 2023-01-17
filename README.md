@@ -28,6 +28,14 @@ yarn dev
 
 3. Abra [http://localhost:3000](http://localhost:3000) no seu browser para ver o resultado.
    <br>
+   
+## Tecnologias Usadas
+- React
+- NextJS
+- TypeScript
+- Next Auth
+- Sass
+<br>
 
 # Fimm woww! 🔥
 
