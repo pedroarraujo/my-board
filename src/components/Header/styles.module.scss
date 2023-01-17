@@ -1,0 +1,152 @@
+.headerContainer {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.headerContent {
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    padding: 20px;
+    margin: 0 auto;
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.headerLogo {
+    width: 180px;
+    z-index: 2;
+
+    img {
+        width: 180px;
+        cursor: pointer;
+    }
+}
+
+.headerMenu {
+    width: calc(100% - 180px);
+    justify-content: space-between;
+
+    nav {
+        margin-left: 50px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 7px 15px;
+        border-radius: 4px;
+        transition: 200ms;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.116);
+        }
+    }
+
+    @media (max-width: 950px) {
+        display: none !important;
+    }
+}
+
+.headerMenuMobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0 0 0 / 79%);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    padding-top: calc(6rem + 50px);
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+    }
+
+    ul,
+    .headerButtons {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 7px 15px;
+        border-radius: 4px;
+        transition: 200ms;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.116);
+        }
+    }
+}
+
+.headerButtons {
+    gap: 15px;
+}
+
+.headerHamburguer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: calc(100% - 180px);
+    z-index: 2;
+
+    button {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        border: none;
+    }
+
+    div {
+        display: block;
+        width: 22px;
+        height: 1px;
+        background-color: #fff;
+        transition: 300ms;
+    }
+
+    .headerHamburguerOpen {
+        div {
+            transform: rotate(0deg);
+        }
+    }
+
+    .headerHamburguerOpen {
+        gap: 0;
+
+        div {
+            &:first-child {
+                transform: rotate(45deg);
+            }
+
+            &:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    @media (min-width: 951px) {
+        display: none !important;
+    }
+}
+
+.userLogged {
+    display: none;
+}

@@ -1,0 +1,183 @@
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  form {
+    input {
+      width: 100%;
+      padding: 12px 18px;
+      font-weight: 500;
+      border-radius: 4px;
+      border: 1px solid;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+
+      span {
+        width: calc(100% - 175px);
+        border: 1px solid #ff0000;
+        color: #ff0000;
+        background-color: #ffdfdf;
+        padding: 12px 18px;
+        font-weight: 500;
+        border-radius: 4px;
+        line-height: 1.1rem;
+      }
+
+      .inputEmptyAlertVisible {
+        display: block;
+        animation: shaking 0.2s ease-in-out;
+      }
+
+      .inputEmptyAlertHidden {
+        display: none;
+      }
+
+      button {
+        margin-left: auto;
+        width: 170px;
+
+        svg {
+          padding: 1px;
+        }
+      }
+    }
+  }
+
+  .editingTask {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    svg {
+      height: 20px;
+      width: 20px;
+      padding: 3px;
+      border-radius: 100%;
+      cursor: pointer;
+      color: #ff0000;
+
+      &:hover {
+        color: #ff0000;
+        background-color: #ffdfdf;
+      }
+    }
+  }
+
+  .InputEditingTask {
+    animation: shaking 0.2s ease-in-out;
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 0 4px #6a63e045;
+  }
+}
+
+.tasks {
+  margin-top: 70px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .task {
+    padding: 30px;
+    background-color: rgb(255 255 255 / 9%);
+    border: 1px solid #ffffff1c;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    p {
+      font-size: 16px;
+    }
+
+    .actions {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      margin: 15px 0 -10px 0;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &:last-child {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    button {
+      border: none;
+      background-color: transparent;
+      color: #fff;
+    }
+
+    .btnDelete {
+      padding: 10px;
+      transform: translateX(10px);
+
+      &:hover {
+        color: #ff0000;
+      }
+    }
+
+    .btnEdit {
+      padding: 10px;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+}
+
+.apoiador {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.09);
+  border: 1px solid #6a63e066;
+  background-image: radial-gradient(
+    at top right,
+    #6a63e0a1 0%,
+    #6a63e038 50%,
+    #ffffff00 100%
+  );
+  border-radius: 5px;
+
+  h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+@keyframes shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0.5rem);
+  }
+  75% {
+    transform: translateX(-0.5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

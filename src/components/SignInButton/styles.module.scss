@@ -1,0 +1,31 @@
+.btnSession {
+    background-color: transparent;
+    color: var(--text);
+    border-color: transparent;
+    cursor: default;
+
+    img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-right: 5px;
+    }
+
+    svg {
+        opacity: 0.7;
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        border-radius: 100%;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #ff000036;
+
+            line {
+                color: red;
+            }
+        }
+    }
+}
