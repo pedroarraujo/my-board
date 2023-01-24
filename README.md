@@ -1,9 +1,10 @@
+Esse é um To-do list vinculado a sua conta do GitHub, que mantém todas as notas salvas no banco de dados Firestore.
+
 <div align="center">
 <img src="https://user-images.githubusercontent.com/121572094/212936585-6b15ab2d-8200-4368-9de7-23b78c3816cc.gif" width="700px">
 </div>
 
 <br>
-Esse é um To-do list vinculado a sua conta do GitHub, que mantém todas as notas salvas no banco de dados Firestore.
 
 Essa aplicação também conta com um sistema de contribuição, onde o usuário pode realizar um pagamento com o PayPal, e então seu avatar irá aparecer na página inicial, além disso uma mensagem de agradecimento irá ser exibida na parte inferir do board.
 <br>
